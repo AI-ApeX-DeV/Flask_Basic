@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1> RESULT IN A TABULAR MANNER USNG JINJA</h1>
+    <table border=2>
+        <thead>
+            <tr>
+                <td>KEYS</td>
+                <td>VALUES</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key,value in dicct.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
